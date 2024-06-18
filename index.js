@@ -93,6 +93,9 @@ console.log(objectTwo);
 let planetsA = ["Earth", "Lamentis", "Vormir"];
 let planetsB = ["Xandar", "Titan"]
 
+let planetC = [...planetsA, ...planetsB];
+console.log(planetC);
+
 // TODO: Use the spread operator to create and print a single array with all five planets.
 
 
@@ -103,7 +106,8 @@ let laufey = {
 }
 
 // TODO: Use the spread operator to create a new object that contains the info from laufey but also contains the key/value pair, son: "Loki"
-
+let laufeySon = {...laufey, son: "Loki",}
+console.log(laufeySon)
 
 
 /** DESTRUCTURING **/
