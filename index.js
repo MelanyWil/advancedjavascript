@@ -161,6 +161,9 @@ console.log(event);
 // TODO: Create variables called company and adjective and then print the sentence "(company) is just plain (adjective)." using the two variables.
 let info = ["Roxxcon", "evil"];
 
+let [ rox, evil ] = info;
+console.log(`${rox} is just plain ${evil}`)
+
 
 // TODO: Create variables called hunterB15, throg, and classicLoki and then print each on separate lines. 
 let actors = {
@@ -172,3 +175,6 @@ let actors = {
 	mobius: "Owen Wilson",
 	hunterB15: "Wunmi Mosaku",
 };
+
+let {throg, classicLoki, hunterB15} = actors;
+console.log([throg, classicLoki, hunterB15].join('\n'));
